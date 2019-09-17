@@ -1,4 +1,4 @@
-# [jamspot] (https://jamspot-cdg.herokuapp.com/)
+# [jamspot](https://jamspot-cdg.herokuapp.com/)
 Connect. Collaborate. Create.
 
 ### What Is Jamspot? :large_blue_circle:
