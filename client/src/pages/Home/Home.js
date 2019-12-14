@@ -75,10 +75,14 @@ class Home extends Component {
                     return timeDifferenceOne - timeDifferenceTwo;
                 })
                 const upcomingSorted = sortedSearch.filter(jam => moment(jam.date) - moment() > 0);
-
-                this.setState({searchJams: upcomingSorted})
+                
+                if (upcomingSorted.length) {
+                    this.setState({searchJams: upcomingSorted});
+                } else {
+                    this.setState({searchJams: [{ name: "", date: "", members: [] }]});
+                }
             }else{
-                this.setState({searchJams: [{ name: "", date: "", members: [] }]})
+                this.setState({searchJams: [{ name: "", date: "", members: [] }]});
             }
         })
     }

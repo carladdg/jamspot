@@ -92,7 +92,7 @@ class Login extends Component {
                                 onChange={this.handleInputChange}
                             />
                         </div>
-                        <button className="log-in-btn btn btn-lg btn-primary" onClick={this.handleFormSubmit}>Log In Potato</button>
+                        <button className="log-in-btn btn btn-lg btn-primary" onClick={this.handleFormSubmit}>Log In</button>
                     </form>
                     <p className="login-to-sign-up-text">Don't have an account? Sign up <Link to="/signup">here</Link>.</p>
                     {this.state.loggedIn && <Redirect to="/" />}
